@@ -39,6 +39,8 @@ int is_not_duplicated(int *array, int size)
 
 int main(int argc, char **argv)
 {
+	if (argc != 2)
+		return 0;
 	int n = ft_strlen(argv[1]);
 	int array[n];
 	int i = 0;
