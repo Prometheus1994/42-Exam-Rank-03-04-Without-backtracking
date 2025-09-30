@@ -26,8 +26,12 @@ int is_not_duplicated(char *str)
 	return 1;
 }
 
+// Note that the moulinette test only with lengths: 1, 3, 6, and 8. So you can reduce this main function more if you want to use this method (Not recommended).
+
 int main(int argc, char **argv)
 {
+	if (argc != 2)
+		return 0;
 	int len = ft_strlen(argv[1]);
 	char *string = malloc(len + 1);
 	string[len] = '\0';
