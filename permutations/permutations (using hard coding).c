@@ -26,7 +26,7 @@ int is_not_duplicated(char *str)
 	return 1;
 }
 
-// Note that the moulinette test only with lengths: 1, 3, 6, and 8. So you can reduce this main function more if you want to use this method (Not recommended).
+// Note that the moulinette tests only with lengths: 1, 3, 6, and 8. So you can reduce this main function more if you want to use this method (Not recommended).
 
 int main(int argc, char **argv)
 {
