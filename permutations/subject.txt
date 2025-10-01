@@ -1,8 +1,7 @@
-Assignment name : permutations
-
-Expected files : *.c *.h
-Allowed functions : puts, malloc, calloc, realloc, free, write
----------------------------------------------------------------
+Assignment name  : permutations
+Expected files   : *.c *.h
+Allowed functions: puts, malloc, calloc, realloc, free, write
+--------------------------------------------------------------------------------
 
 Write a program that will print all the permutations of a string given as argument.
 
@@ -23,3 +22,4 @@ bac$
 bca$
 cab$
 cba$
+$>
