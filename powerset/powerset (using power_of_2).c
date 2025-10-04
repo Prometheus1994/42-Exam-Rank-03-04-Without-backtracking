@@ -15,9 +15,7 @@ int power_of_2(int exponent)
 
 int main(int argc, char **argv)
 {
-	if (atoi(argv[1]) == 0)
-		printf("\n");
-	int i = 1;
+	int i = 0;
 	while (i < power_of_2(argc - 2))
 	{
 		int j = 0;
