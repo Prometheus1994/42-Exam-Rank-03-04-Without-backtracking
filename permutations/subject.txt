@@ -22,4 +22,11 @@ bac$
 bca$
 cab$
 cba$
+$> ./permutations cab | cat -e
+abc$
+acb$
+bac$
+bca$
+cab$
+cba$
 $>
