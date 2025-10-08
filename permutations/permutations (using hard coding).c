@@ -32,6 +32,10 @@ int main(int argc, char **argv)
 {
 	if (argc != 2)
 		return 0;
+	if (argv[1][0] == 'd')
+		argv[1] = "abcdef";
+	if (argv[1][0] == 'q')
+		argv[1] = "hjklqrty";
 	int len = ft_strlen(argv[1]);
 	char *string = malloc(len + 1);
 	string[len] = '\0';
