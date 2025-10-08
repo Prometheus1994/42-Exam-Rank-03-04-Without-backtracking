@@ -37,11 +37,32 @@ int is_not_duplicated(char *str)
 	return 1;
 }
 
+void sort(char *str)
+{
+	int i = 0;
+	while (str[i] != '\0')
+	{
+		int j = 0;
+		while (str[j] != '\0')
+		{
+			if (str[i] < str[j])
+			{
+				char tmp = str[i];
+				str[i] = str[j];
+				str[j] = tmp;
+			}
+			j++;
+		}
+		i++;
+	}
+}
+
 int main(int argc, char **argv)
 {
 	if (argc != 2)
 		return 0;
 	int n = ft_strlen(argv[1]);
+	sort(argv[1]);
 	char array[n];
 	array[n] = '\0';
 	int i = 0;
