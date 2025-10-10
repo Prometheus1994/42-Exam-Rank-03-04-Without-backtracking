@@ -97,8 +97,6 @@ int eval_factor(char *exp)
 		result = exp[idx] - '0';
 		idx++;
 	}
-	else
-		result = 0;
 	return result;
 }
 
