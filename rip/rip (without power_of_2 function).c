@@ -45,7 +45,7 @@ void inside(char *argv1, int *min, int step)
 		j = 0;
 		while (j < len)
 		{
-			if (i / (1 << j) % 2)
+			if ((i >> j) % 2)
 			{
 				array[j] = ' ';
 				spaces_nbr++;
