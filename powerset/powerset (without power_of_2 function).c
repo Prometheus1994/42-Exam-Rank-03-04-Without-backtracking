@@ -11,8 +11,8 @@ int main(int argc, char **argv)
 		int solutions1 = 0;
 		while (j < argc - 2)
 		{
-			sum += ((i >> j) % 2) * atoi(argv[j + 2]);
-			solutions1 += (i >> j) % 2;
+			sum += (i >> j & 1) * atoi(argv[j + 2]);
+			solutions1 += i >> j & 1;
 			j++;
 		}
 		if (atoi(argv[1]) == sum)
@@ -21,7 +21,7 @@ int main(int argc, char **argv)
 			int solutions2 = 0;
 			while (j < argc - 2)
 			{
-				if ((i >> j) % 2)
+				if (i >> j & 1)
 				{
 					printf("%s", argv[j + 2]);
 					solutions2++;
